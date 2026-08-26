@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Rafael Zandarim, desenvolvedor de jogos em formação." />
+    <title>Rafael Zandarim | Portfólio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="boot-screen" id="boot-screen" aria-live="polite">
+      <button class="skip-boot" id="skip-boot">PULAR</button>
+      <div class="boot-content">
+        <p class="boot-kicker">SISTEMA DE PORTFÓLIO v1.0</p>
+        <div class="terminal" id="terminal"></div>
+        <div class="loading-track"><span id="loading-bar"></span></div>
+      </div>
+    </div>
+
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Início">RZ<span>_</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+      <nav id="main-nav">
+        <a href="#sobre">Sobre</a><a href="#experiencia">Trajetória</a><a href="#skills">Skills</a><a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div><!-- IMG-BACKGROUND-HERO -->
+        <div class="hero-copy reveal">
+          <p class="eyebrow">PLAYER_01 / PORTFÓLIO</p>
+          <h1 id="hero-title">Rafael<br /><em>Zandarim</em></h1>
+          <p class="hero-role">Desenvolvedor de Jogos em Formação <span>|</span> Professor de Programação e Robótica <span>|</span> Desenvolvedor de Conteúdo</p>
+          <div class="hero-actions"><a class="button primary" href="#contato">Entrar em contato <i data-lucide="arrow-up-right"></i></a><a class="button ghost" href="#experiencia">Ver trajetória <i data-lucide="move-down"></i></a></div>
+        </div>
+        <div class="profile-wrap reveal">
+          <!-- FOTO-PERFIL-RAFAEL -->
+          <div class="profile-placeholder"><i data-lucide="user-round"></i><span>FOTO-PERFIL-RAFAEL</span></div>
+          <div class="profile-tag"><span class="status-dot"></span> DISPONÍVEL PARA NOVAS EXPERIÊNCIAS</div>
+        </div>
+        <a class="scroll-hint" href="#sobre">SCROLL PARA INICIAR <i data-lucide="arrow-down"></i></a>
+      </section>
+
+      <section class="section about" id="sobre">
+        <div class="section-label reveal"><span>FASE 01</span><b>Sobre mim</b></div>
+        <div class="split-layout">
+          <div class="about-art reveal"><!-- IMG-SOBRE-MIM --><div class="image-placeholder compact"><i data-lucide="image"></i><span>IMG-SOBRE-MIM</span></div><div class="pixel-blocks"></div></div>
+          <div class="section-copy reveal">
+            <h2>Conhecimento técnico ganha força quando vira <em>conexão.</em></h2>
+            <p>Sou estudante do terceiro ano do Ensino Médio e atualmente curso Análise e Desenvolvimento de Software (ADS) como formação técnica.</p>
+            <p>Minha trajetória profissional começou no final de 2024, em uma instituição especializada em cursos de programação, desenvolvimento de jogos e robótica. Comecei como monitor e, ao longo da minha evolução profissional, passei a atuar como professor. Atualmente, também faço parte da equipe responsável pelo desenvolvimento de conteúdo educacional.</p>
+            <p>Durante essa trajetória, desenvolvi comunicação, liderança, autonomia, adaptação, resolução de problemas e trabalho em equipe. No desenvolvimento de conteúdo, crio guias, apostilas e atualizo materiais para aulas e treinamentos de professores.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section game-relation">
+        <div class="section-label reveal"><span>FASE 02</span><b>Minha relação com jogos</b></div>
+        <div class="relation-content reveal"><div><p class="large-copy">Jogos são mais do que entretenimento: são experiências que podem <em>marcar uma vida.</em></p><p>O que mais me atrai no desenvolvimento de jogos é a possibilidade de criar experiências capazes de impactar a vida de outras pessoas.</p><p>Durante minha infância, fui muito influenciado por grandes jogos independentes, especialmente Undertale e Bendy. Essas experiências despertaram meu interesse pela maneira como jogos usam mecânicas, personagens, ambientes e histórias para criar momentos marcantes.</p><p>Meu objetivo é, no futuro, participar da criação de jogos que consigam despertar esse mesmo sentimento em outras pessoas.</p></div><div class="image-placeholder inspiration"><!-- IMG-INSPIRACOES-GAMES --><i data-lucide="gamepad-2"></i><span>IMG-INSPIRACOES-GAMES</span></div></div>
+      </section>
+
+      <section class="section interests">
+        <div class="section-label reveal"><span>FASE 03</span><b>Áreas de interesse</b></div>
+        <div class="interest-grid reveal">
+          <article><span>01</span><i data-lucide="code-2"></i><h3>Programação de jogos</h3></article><article><span>02</span><i data-lucide="swords"></i><h3>Game Design</h3></article><article><span>03</span><i data-lucide="box"></i><h3>Modelagem 3D</h3></article><article><span>04</span><i data-lucide="sparkles"></i><h3>Personagens e objetos</h3></article><article><span>05</span><i data-lucide="joystick"></i><h3>Mecânicas de jogos</h3></article><article><span>06</span><i data-lucide="book-open-text"></i><h3>Narrativa e experiências</h3></article>
+        </div>
+        <p class="section-note reveal">Apesar de me identificar principalmente com programação e Game Design, tenho um interesse especial por modelagem 3D, principalmente na criação de personagens, objetos e elementos que possam fazer parte de um jogo.</p>
+      </section>
+
+      <section class="section experience" id="experiencia">
+        <div class="section-label reveal"><span>FASE 04</span><b>Experiência profissional</b></div>
+        <div class="experience-heading reveal"><div><p class="eyebrow">MEGAMENTE MENTORING / DESDE 2024</p><h2>Professor e<br /><em>Desenvolvedor de Conteúdo</em></h2></div><p>Minha trajetória na instituição começou como monitor e evoluiu para minha atual posição como professor, além da participação na equipe de desenvolvimento de conteúdo.</p></div>
+        <div class="timeline reveal"><div class="timeline-line"></div><article class="active"><span>01</span><h3>Monitor</h3><p>Primeiros passos apoiando alunos em seus projetos.</p></article><article class="active"><span>02</span><h3>Professor</h3><p>Aulas de programação, jogos e robótica.</p></article><article class="active"><span>03</span><h3>Professor & Conteúdo</h3><p>Guias, apostilas e materiais de formação.</p></article></div>
+        <div class="experience-bottom reveal"><div class="image-placeholder material"><!-- IMG-MENTORIA-AULA / IMG-MATERIAL-DIDATICO --><i data-lucide="presentation"></i><span>IMG-MENTORIA-AULA</span></div><ul><li>Ministrar aulas de programação, jogos e robótica.</li><li>Auxiliar alunos durante seus projetos.</li><li>Criar e aprimorar guias e apostilas.</li><li>Desenvolver materiais para treinamentos de professores.</li><li>Adaptar conteúdos técnicos para linguagem acessível.</li></ul></div>
+      </section>
+
+      <section class="section skills" id="skills"><!-- IMG-TEXTURA-SECAO-SKILLS -->
+        <div class="section-label reveal"><span>FASE 05</span><b>Competências</b></div>
+        <div class="skills-intro reveal"><h2>Level up<br />em <em>constante evolução.</em></h2><p>Conhecimentos construídos entre sala de aula, desenvolvimento de conteúdo e a vontade de fazer jogos acontecerem.</p></div>
+        <div class="skill-columns reveal"><div><h3>Ferramentas</h3><div class="skill"><div><b>Unity</b><span>70%</span></div><i style="--level:70%"></i></div><div class="skill"><div><b>Unreal Engine</b><span>55%</span></div><i style="--level:55%"></i></div><div class="skill"><div><b>Construct</b><span>75%</span></div><i style="--level:75%"></i></div><div class="skill"><div><b>Blender</b><span>60%</span></div><i style="--level:60%"></i></div></div><div class="tool-showcase"><div class="project-card"><!-- IMG-PROJETO-UNITY-01 / IMG-PROJETO-UNREAL-01 --><span>IMG-PROJETO-UNITY-01</span></div><div class="project-card"><!-- IMG-MODELAGEM-BLENDER-01 / IMG-MODELAGEM-BLENDER-02 / IMG-PROJETO-CONSTRUCT-01 --><span>IMG-MODELAGEM-BLENDER-01</span></div></div></div>
+        <div class="skill-tags reveal"><h3>Conhecimentos técnicos</h3><div><span>Programação</span><span>Lógica de programação</span><span>Desenvolvimento de jogos</span><span>Game Design</span><span>Modelagem 3D</span><span>Conteúdo educacional</span></div><h3>Habilidades profissionais</h3><div><span>Comunicação</span><span>Liderança</span><span>Autonomia</span><span>Adaptabilidade</span><span>Resolução de problemas</span><span>Trabalho em equipe</span><span>Organização</span><span>Aprendizado contínuo</span></div></div>
+      </section>
+
+      <section class="section education">
+        <div class="section-label reveal"><span>FASE 06</span><b>Formação</b></div>
+        <div class="education-list reveal"><article><span>01</span><div><h3>Ensino Médio</h3><p>3º ano, em andamento</p></div><i data-lucide="graduation-cap"></i></article><article><span>02</span><div><h3>Técnico em Análise e Desenvolvimento de Software</h3><p>Em andamento</p></div><i data-lucide="braces"></i></article><article><span>03</span><div><h3>Megamente Mentoring</h3><p>Formação e experiência profissional desenvolvidas simultaneamente pela instituição.</p></div><i data-lucide="brain-circuit"></i></article></div>
+      </section>
+
+      <section class="section objective">
+        <div class="section-label reveal"><span>FASE 07</span><b>Objetivo profissional</b></div><div class="objective-copy reveal"><p>Quero construir uma carreira no desenvolvimento de jogos digitais, unindo <em>programação, Game Design e modelagem 3D.</em></p><p>Busco oportunidades para continuar aprendendo e participar da criação de experiências interativas que valorizem personagens, mecânicas, ambientes e narrativa.</p></div>
+      </section>
+
+      <section class="section studying">
+        <div class="section-label reveal"><span>FASE 08</span><b>Atualmente estudando</b></div><div class="study-orbit reveal"><span>Desenvolvimento de jogos</span><span>Programação</span><span>Game Design</span><span>Modelagem 3D</span><span>Unity</span><span>Unreal Engine</span><span>Construct</span><span>Blender</span><span>Experiências interativas</span></div>
+      </section>
+
+      <section class="contact" id="contato"><div class="contact-inner reveal"><p class="eyebrow">FASE FINAL / CONTATO</p><h2>Vamos criar algo que<br /><em>marque alguém.</em></h2><div class="contact-links"><a class="contact-button glitch-link" href="https://github.com/Zanda-69" target="_blank" rel="noreferrer"><i data-lucide="github"></i><span>GitHub</span><b>ICONE-GITHUB</b><i data-lucide="arrow-up-right"></i></a><a class="contact-button glitch-link" href="https://www.linkedin.com/in/rafael-zandarim-051707381/" target="_blank" rel="noreferrer"><i data-lucide="linkedin"></i><span>LinkedIn</span><b>ICONE-LINKEDIN</b><i data-lucide="arrow-up-right"></i></a><a class="contact-button glitch-link" href="mailto:rzandarim@gmail.com"><i data-lucide="mail"></i><span>E-mail</span><b>ICONE-EMAIL</b><i data-lucide="arrow-up-right"></i></a></div></div></section>
+    </main>
+    <footer><a class="brand" href="#top">RZ<span>_</span></a><p>Rafael Zandarim</p><small>DESENVOLVIMENTO DE JOGOS · PROGRAMAÇÃO · GAME DESIGN · 3D</small></footer>
+    <div class="achievement" id="achievement"><i data-lucide="trophy"></i><div><small>CONQUISTA DESBLOQUEADA</small><b>Trajetória Profissional</b></div></div>
+    <script src="https://unpkg.com/lucide@latest"></script><script src="script.js"></script>
+  </body>
+</html>
