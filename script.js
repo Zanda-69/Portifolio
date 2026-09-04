@@ -23,6 +23,35 @@ document.getElementById('skip-boot').addEventListener('click', finishBoot);
 runBoot();
 
 lucide.createIcons();
+
+function addMedia(label, media) {
+  const placeholder = [...document.querySelectorAll('.profile-placeholder, .image-placeholder, .project-card')]
+    .find(element => element.textContent.trim() === label);
+  if (placeholder) placeholder.replaceChildren(media);
+}
+
+function image(src, alt) {
+  const element = new Image();
+  element.src = src;
+  element.alt = alt;
+  element.loading = 'lazy';
+  return element;
+}
+
+addMedia('FOTO-PERFIL-RAFAEL', image('assets/images/foto-perfil-rafael.jpeg', 'Retrato de Rafael Zandarim'));
+addMedia('IMG-SOBRE-MIM', image('assets/images/sobre-mim.jpeg', 'Rafael Zandarim apresentando um projeto'));
+addMedia('IMG-INSPIRACOES-GAMES', image('assets/images/inspiracoes-games.webp', 'Undertale, uma inspiração para Rafael'));
+addMedia('IMG-PROJETO-UNITY-01', image('assets/images/projeto-unity.png', 'Logo do Unity'));
+addMedia('IMG-MODELAGEM-BLENDER-01', image('assets/images/modelagem-blender.png', 'Logo do Blender'));
+
+const mentoringVideo = document.createElement('video');
+mentoringVideo.src = 'assets/videos/mentoria-aula.mp4';
+mentoringVideo.controls = true;
+mentoringVideo.preload = 'metadata';
+mentoringVideo.playsInline = true;
+mentoringVideo.setAttribute('aria-label', 'Vídeo de Rafael Zandarim ministrando uma aula');
+addMedia('IMG-MENTORIA-AULA', mentoringVideo);
+
 const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }), { threshold: .12 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 const skills = document.querySelector('.skills');
